@@ -30,6 +30,10 @@ vim.keymap.set("n", "<C-m>", "<C-b>", { desc = "Page Up", noremap = true, silent
 map({ "i" }, "<Tab>", "<C-o>>_", { desc = "Indent line", noremap = true, silent = true })
 map({ "i" }, "<s-tab>", "<C-o><<_", { desc = "Unindent line", noremap = true, silent = true })
 
+-- Exit insert mode with jj or jk
+map({ "i" }, "jj", "<Esc>", { desc = "Exit insert mode" })
+map({ "i" }, "jk", "<Esc>", { desc = "Exit insert mode" })
+
 map({ "n" }, "<C-r>", "<cmd>redo<CR>", { desc = "Redo", noremap = true, silent = true })
 
 map({ "n" }, "æ", "<cmd>lua require('which-key').show('[')<CR>", { desc = "[", noremap = true })
